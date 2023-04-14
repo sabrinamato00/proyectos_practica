@@ -4,12 +4,16 @@
     }
 
 body{
-    background-color:#F5F5F5;
+    background-color:#e7e6e6;
     font-family:Roboto,sans-serif;
+}
+body.dark{
+    background-color:rgb(36, 36, 36)  ;
+    color: white;
 }
 
 header{
-    background-color: #5B9383;
+    background-color: #fefefe;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -17,10 +21,17 @@ header{
     margin-bottom: 2%;
     font-family: 'Signika', sans-serif;
     font-size: 1.2em;
-
 }  
-header a{
+body.dark header{
+    background-color: gray;
     color: white;
+}
+body.dark header a{
+    color: white;
+    text-decoration: none;
+}
+header a{
+    color: black;
     text-decoration: none;
 }
 .enlaces{
@@ -31,7 +42,6 @@ header a{
 .logotipo{
     margin-left: 5%;
 }
-
 .switch{
     background:#343d5b;
     border-radius:1000px;
@@ -40,6 +50,7 @@ header a{
     width: 60px;
     margin-right: 5%;
 }   
+
 .switch::after{
     content:"";
     width:30px;
@@ -48,14 +59,16 @@ header a{
     background:#f1f1f1;
     right:unset;
     border-radius:100px;
+    display: block;
 }
 .switch.active{
     background:orange;
-    color:#000
+    color:#000;
 }
 .switch.active::after{
-    right:0;
-    left:unset
+    /* position: relative; */
+    right: 77px;
+    width: 30px;
 }
 .switch span{
     width:30px;
@@ -79,7 +92,7 @@ main h1{
     margin-bottom: 5%;
 }
 .lineTitle{
-    height: 0.5%;
+    height: 0.3%;
     width: 30%;
     background-color: #5B9383;
     position: absolute;
@@ -95,6 +108,7 @@ main h1{
     border-style: ridge;
     border-radius: 5px;
     border-color: #5B9383;
+    background-color: #f1f1f1;
     height: 60vh;
     width: 20%;
     display: flex;
@@ -102,6 +116,10 @@ main h1{
     justify-content: center;
     text-align: justify;
 }
+body.dark .card{
+    background-color: gray;
+}
+
 .card img{
     height: 50%;
 }
