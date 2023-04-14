@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin:0;
+    }
+
+body{
+    background-color:#F5F5F5;
+    font-family:Roboto,sans-serif;
+}
+
+header{
+    background-color: #5B9383;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 2%;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2em;
+
+}  
+header a{
+    color: white;
+    text-decoration: none;
+}
+.enlaces{
+    display: flex;
+    gap: 10%;
+}
+
+.logotipo{
+    margin-left: 5%;
+}
+
+.switch{
+    background:#343d5b;
+    border-radius:1000px;
+    cursor:pointer;
+    display:flex;
+    width: 60px;
+    margin-right: 5%;
+}   
+.switch::after{
+    content:"";
+    width:30px;
+    height:30px;
+    position:absolute;
+    background:#f1f1f1;
+    right:unset;
+    border-radius:100px;
+}
+.switch.active{
+    background:orange;
+    color:#000
+}
+.switch.active::after{
+    right:0;
+    left:unset
+}
+.switch span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    background:0 0;
+    color:#fff;
+    padding:0 0 0 7px
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+}
+main h1{
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 5%;
+}
+.lineTitle{
+    height: 0.5%;
+    width: 30%;
+    background-color: #5B9383;
+    position: absolute;
+    top: 22vh;
+}
+.card-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.card{
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: #5B9383;
+    height: 60vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+.card img{
+    height: 50%;
+}
+.card h2{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika', sans-serif;
+}
+.line{
+    height: 0.5%;
+    width: 20%;
+    margin-left: 40%;
+    background-color: #5B9383;
+}
+.card p{
+    height: 30%;
+    display: flex;
+    font-size: 0.85em;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.redesSociales{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.redesSociales I{
+    font-size: large;
+    
+}
