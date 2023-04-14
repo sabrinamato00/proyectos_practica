@@ -122,6 +122,8 @@ body.dark .card{
 
 .card img{
     height: 50%;
+    object-fit: cover;
+    
 }
 .card h2{
     height: 10%;
