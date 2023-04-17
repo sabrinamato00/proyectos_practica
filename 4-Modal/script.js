@@ -2,7 +2,7 @@ const btnOpen = document.getElementById("open");
 const contenedorModal = document.getElementById("contenedorModal");
 const modal = document.getElementById("modal");
 const closeModalBtn = document.getElementById("closeModalBtn");
-const closeModale = document.getElementById("close");
+const closeModal = document.getElementById("close");
 
 btnOpen.addEventListener("click", () => {
   contenedorModal.classList.add("active");
@@ -10,6 +10,11 @@ btnOpen.addEventListener("click", () => {
 });
 
 closeModalBtn.addEventListener("click", () => {
+  contenedorModal.classList.remove("active");
+  modal.classList.remove("active");
+});
+
+closeModal.addEventListener("click", () => {
   contenedorModal.classList.remove("active");
   modal.classList.remove("active");
 });
