@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+body{
+    background-color: rgb(41, 40, 40);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2%;
+    height: max-content;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    padding-top: 5%;
+}
+.contenedor.pelicula{
+    text-align: center;
+}
+.portada{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.buttons{
+    position: absolute;
+    top: 325%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 150px;
+    background-color: rgb(154, 91, 213);
+    color: white;
+    border-color: white;
+}
+button:hover{
+    cursor: pointer;
+}
